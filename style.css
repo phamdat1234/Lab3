@@ -139,18 +139,29 @@ img {
     width: auto;
     object-fit: cover; /* Giữ nguyên tỷ lệ ảnh */
 }
+/* Thiết kế cho màn hình nhỏ hơn 768px (điện thoại) */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Stack theo chiều dọc trên màn hình nhỏ */
+        flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+        padding: 10px;
     }
 
     #sidebarInner {
-        margin: 10px auto;
-        width: 100%; /* Để sidebar chiếm toàn bộ chiều rộng */
+        width: 100%; /* Sidebar chiếm toàn bộ chiều rộng */
+        margin: 10px 0;
     }
 
     #main_inner {
-        margin: 20px;
+        margin: 10px;
+    }
+
+    .view_Lesson button {
+        font-size: 14px; /* Thu nhỏ chữ trên điện thoại */
+        padding: 12px;
+    }
+
+    img {
+        height: 200px; /* Thu nhỏ hình ảnh */
     }
 }
 .sub_container:hover {
